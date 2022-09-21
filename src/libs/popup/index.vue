@@ -1,7 +1,7 @@
 <template>
   <!-- teleport将内容渲染到指定元素下 -->
   <!-- <teleport to="body" > -->
-    <h1>{{modelShow}}</h1>
+    <!-- <h1>{{modelShow}}</h1> -->
     <!-- 蒙版 -->
     <transition name="fade">
       <!-- /80表示透明度80% -->

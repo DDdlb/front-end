@@ -16,7 +16,7 @@
 <script setup>
 import headerThemeVue from './header-theme.vue'
 import headerUserVue from './header-user.vue'
-import headerSearch from './header-search/index.vue'
+import headerSearchVue from './header-search/index.vue'
 import { useRouter } from 'vue-router'
 // router === this.$router
 const router = useRouter()

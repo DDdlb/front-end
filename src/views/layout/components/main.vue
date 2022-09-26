@@ -1,5 +1,4 @@
 <template>
-    <h1>main</h1>
-    <!-- <m-button>hello World</m-button> -->
+    <router-view></router-view>
 </template>
 <script setup></script>

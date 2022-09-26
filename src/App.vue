@@ -1,8 +1,10 @@
 <template>
   <!-- <HelloWorldVue :msg="msg" :isShow="isShow" /> -->
   <!-- <button @click="handleClick">change</button> -->
-
+<div class="h-screen w-screen fixed top-0 left-0">
   <router-view />
+</div>
+  
 </template>
 
 <script setup>

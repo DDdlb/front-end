@@ -16,7 +16,7 @@
     <!-- 弹窗 -->
     <transition name="popup-down-up">
       <!-- v-bing="$attrs": 使用时绑定的属性会绑定到div上 -->
-      <div class="w-screen bg-white z-50 fixed bottom-0" v-if="modelShow">
+      <div class="w-screen bg-white z-50 fixed bottom-0 dark:bg-zinc-800" v-if="modelShow">
         <slot />
       </div>
     </transition>

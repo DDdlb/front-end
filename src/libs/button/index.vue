@@ -28,9 +28,9 @@ import { computed } from "@vue/runtime-core"
 
 // type可选项：表示按钮风格
 const typeEnum = {
-  primary: 'text-white bg-zinc-800 hover:bg-zinc-900 active:bg-zinc-800',
-  main: 'text-white bg-main hover:bg-hover-main active:bg-main',
-  info: 'text-zinc-800 bg-zinc-200 hover:bg-zinc-300 active:bg-zinc-200'
+  primary: 'text-white bg-zinc-800 hover:bg-zinc-900 active:bg-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-700 dark:active:bg-zinc-700',
+  main: 'text-white bg-main hover:bg-hover-main active:bg-main dark:bg-zinc-900 dark:hover:bg-zinc-700 dark:active:bg-zinc-700',
+  info: 'text-zinc-800 bg-zinc-200 dark:bg-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-600 active:bg-zinc-200 dark:active:bg-zinc-700'
 }
 // size 可选项： 表示按钮大小（区分文字按钮和icon按钮）
 const sizeEnum = {

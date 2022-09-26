@@ -1,24 +1,18 @@
 <template>
-  <mobile-navigation-vue :categories="categories" v-if="isMobile" />
+  <mobile-navigation-vue v-if="isMobile" />
+  <pc-navigation-vue v-else />
 </template>
 
 <script setup>
 import { isMobile } from '@/utils/flexible.js';
 import mobileNavigationVue from './mobile/index.vue'
 import pcNavigationVue from './pc/index.vue'
+import { useStore } from 'vuex';
 
-import { getCategory } from '@/api/category.js';
-import { onMounted, ref } from '@vue/runtime-core';
-import { ALL_CATEGORY_ITEM } from '@/config'
+const store = useStore()
+// 获取categories数据，存入vuex
+store.dispatch('categories/useCategoriesData')
 
-const categories = ref([])
-
-onMounted(async()=>{
-    const res = await getCategory()
-    console.log(res);
-    categories.value = res.categories
-    categories.value.unshift(ALL_CATEGORY_ITEM)
-})
 </script>
 
 <style>

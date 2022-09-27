@@ -39,7 +39,6 @@ export default {
   mutations: {
     // 为categories赋值的唯一方式
     setCategories(state, newCategories) {
-        console.log(newCategories);
       state.categories = [ALL_CATEGORY_ITEM, ...newCategories]
     }
   },

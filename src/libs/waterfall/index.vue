@@ -148,6 +148,7 @@ const useItemHeight =() =>{
 }
 
 onMounted(()=>{
+  console.log(props.data);
   useColumnWidth()
 })
 /**
@@ -163,6 +164,7 @@ watch(
       if(resetColumnHeight){
         // 重新构建高度容器
         useColumnHeightObj()
+        console.log('first load');
       }
       if(props.picturePreReading){
         waitImgComplete()
@@ -200,8 +202,10 @@ const increasingHeight = (index)=>{
  * 渲染位置
  */
 const useItemLocation = ()=>{
+  console.log('useItemLocation', props.data);
   // 处理数据源
   props.data.forEach((item, index)=>{
+
     // 避免重复计算
     if(item._style) return 
     // 生成_style

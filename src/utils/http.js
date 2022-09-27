@@ -10,6 +10,7 @@ const service = axios.create({
  */
 service.interceptors.response.use(res=>{
     const { code, msg, data } = res.data
+    if(!code) return res.data
     if(code === 200){
         return data
     }

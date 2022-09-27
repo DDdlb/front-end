@@ -3,9 +3,12 @@
   <div 
     class="bg-white dark:bg-zinc-900 xl:dark:bg-zinc-800 rounded pb-1"
   >
-    <div class="relative w-full rounded cursor-zoom-in group">
+    <div class="relative w-full rounded cursor-zoom-in group" :style="{
+      backgroundColor: randomRGB()
+    }">
       <!-- 图片 -->
-      <img class="w-full rounded bg-transparent" :src="data.photo" alt="">
+      <img v-lazy class="w-full rounded bg-transparent" :src="data.photo" alt="" 
+        :style="{ height: (width / data.photoWidth)*data.photoHeight + 'px'}">
       <!-- 蒙版层 移动端不显示蒙版，只在pc端显示-->
       <div 
         class="hidden opacity-0 w-full h-full bg-zinc-900/50 absolute top-0 
@@ -53,6 +56,7 @@
 </template>
 
 <script setup>
+  import { randomRGB } from '@/utils/color'
 defineProps({
   data: {
     type: Object,

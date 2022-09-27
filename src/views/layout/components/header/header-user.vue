@@ -5,7 +5,9 @@
         class="relative flex items-center p-0.5 rounded-sm cursor-pointer duration-200 
         outline-none hover:bg-zinc-100 dark:hover:bg-zinc-900 ">
         <!-- 头像 -->
-        <img class="w-3 h-3 rounded-sm" src="https://thirdwx.qlogo.cn/mmopen/vi_32/JQwSicKgsAW355mNfRj3bJ05tZkh5CacibkVL8eUUP1w2wT6NG1jiap10F75J4JsJu40IhUqRZajFkF2IZ1SIwbgw/132" alt="">
+        <img 
+          class="w-3 h-3 rounded-sm" 
+          src="https://thirdwx.qlogo.cn/mmopen/vi_32/JQwSicKgsAW355mNfRj3bJ05tZkh5CacibkVL8eUUP1w2wT6NG1jiap10F75J4JsJu40IhUqRZajFkF2IZ1SIwbgw/132" alt="">
         <!-- 下箭头 -->
         <m-svg-icon class="h-1.5 w-1.5 ml-0.5" name="down-arrow" fillClass="fill-zinc-900 dark:fill-zinc-300"></m-svg-icon>
         <!-- vip -->
